@@ -9,7 +9,7 @@
 -->
 
 
-- 🔭 I’m currently working on automated scripts for basic pentesting
+- 🔭 I’m currently working on automated scripts for basic recon
 - 🌱 I’m currently learning MySQL
 - 💬 Ask me about Linux
 - 📫 How to reach me: gocharan98@gmail.com
