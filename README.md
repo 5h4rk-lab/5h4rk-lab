@@ -30,6 +30,7 @@
 </a>
 <br/>
 
+![badge](http://www.hackthebox.eu/badge/image/345137)
 ## Languages and Tools that I use:
   
 <img src="https://media.giphy.com/media/KcPdFfmoj9Yi2X1ZrD/giphy.gif" width="50"><img src="https://media.giphy.com/media/UWt0rhp21JgLwoeFQP/giphy.gif" width="50"><img src="https://img-a.udemycdn.com/course/240x135/958532_478a_4.jpg" width="50"><img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" width="50">
