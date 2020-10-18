@@ -9,8 +9,8 @@
 -->
 
 
-- 🔭 I’m currently working on oscp-journey 
-- 🌱 I’m currently learning oscp 
+- 🔭 I’m currently working on learnig security concepts 
+- 🌱 I’m currently working for oscp 
 - 💬 Ask me about Linux
 - 📫 How to reach me: gocharan98@gmail.com
 - ⚡ Fun fact: There is a hacker attack every 39 seconds
