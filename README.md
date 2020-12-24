@@ -15,7 +15,7 @@
 - 📫 How to reach me: gocharan98@gmail.com
 - ⚡ Fun fact: There is a hacker attack every 39 seconds
 
-<a href="https://twitter.com/gocharan1">
+<a href="https://twitter.com/gocharan_">
   <img align="left" alt="gocharan twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />
 </a>
 
