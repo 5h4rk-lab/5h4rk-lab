@@ -16,11 +16,11 @@
 - ⚡ Fun fact: There is a hacker attack every 39 seconds
 
 <a href="https://twitter.com/gocharan_">
-  <img align="left" alt="gocharan twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />
+  <img align="left" alt="gocharan twitter" width="30px" src="https://intaadvising.gatech.edu/wp-content/uploads/2020/11/twitter.png" />
 </a>
 
 <a href="https://www.linkedin.com/in/kilaru-go-charan-9219501a1">
-  <img align="left" alt="gocharans Linkdein" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />
+  <img align="left" alt="gocharans Linkdein" width="22px" src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg" />
 </a>
 <a href="https://www.hackthebox.eu/profile/345137/">
   <img align="left" alt="gocharans HTB" width="22px" src="https://forum.hackthebox.eu/uploads/RJZMUY81IQLQ.png" />
