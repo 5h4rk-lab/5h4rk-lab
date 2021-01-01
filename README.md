@@ -22,9 +22,6 @@
 <a href="https://www.linkedin.com/in/kilaru-go-charan-9219501a1">
   <img align="left" alt="gocharans Linkdein" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />
 </a>
-<a href="https://www.instagram.com/gocharan_/">
-  <img align="left" alt="gocharans Instagram" width="22px" src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" />
-</a>
 <a href="https://www.hackthebox.eu/profile/345137/">
   <img align="left" alt="gocharans HTB" width="22px" src="https://forum.hackthebox.eu/uploads/RJZMUY81IQLQ.png" />
 </a>
