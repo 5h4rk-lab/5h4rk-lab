@@ -20,10 +20,10 @@
 </a>
 
 <a href="https://www.linkedin.com/in/kilaru-go-charan-9219501a1">
-  <img align="left" alt="gocharans Linkdein" width="22px" src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg" />
+  <img align="left" alt="gocharans Linkdein" width="21px" src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg" />
 </a>
 <a href="https://www.hackthebox.eu/profile/345137/">
-  <img align="left" alt="gocharans HTB" width="22px" src="https://forum.hackthebox.eu/uploads/RJZMUY81IQLQ.png" />
+  <img align="left" alt="gocharans HTB" width="25px" src="https://forum.hackthebox.eu/uploads/RJZMUY81IQLQ.png" />
 </a>
 <br/>
 
