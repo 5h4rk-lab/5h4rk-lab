@@ -1,4 +1,4 @@
-### Hi there 👋
+### Hi there 👋 welcome to my lab 🧪 I cook some cool stuff.
 ### This is [Gocharan](https://5h4rk-lab.github.io/) 
 
 <!--
