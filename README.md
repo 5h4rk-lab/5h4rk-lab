@@ -12,7 +12,7 @@
 - 🔭 I’m currently working on learnig security concepts 
 - 🌱 I’m currently working for oscp 
 - 💬 Ask me about Linux
-- 📫 How to reach me: gocharan98@gmail.com
+- 📫 How to reach me: 5h4rk07@protonmail.com
 - ⚡ Fun fact: There is a hacker attack every 39 seconds
 
 <a href="https://twitter.com/gocharan_">
