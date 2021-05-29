@@ -33,7 +33,7 @@
 <img src="https://media.giphy.com/media/KcPdFfmoj9Yi2X1ZrD/giphy.gif" width="50"><img src="https://media.giphy.com/media/UWt0rhp21JgLwoeFQP/giphy.gif" width="50"><img src="https://img-a.udemycdn.com/course/240x135/958532_478a_4.jpg" width="50"><img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" width="50">
   
 <div>
-<img align="left" src="https://media.giphy.com/media/MGdfeiKtEiEPS/giphy.gif" width="250">
+<img align="left" src="https://64.media.tumblr.com/bc91fffa1f7f71014fddf10d3d2decbd/tumblr_pkxty5psM71sguk2k_1280.gifv" width="250">
 <img align="right" src="https://github-readme-stats.vercel.app/api?username=5h4rk-lab&?count_private=true&show_icons=true&theme=dark&include_all_commits=true" />
 </div>
 
