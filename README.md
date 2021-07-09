@@ -30,7 +30,7 @@
 ![badge](http://www.hackthebox.eu/badge/image/345137)
 ## Languages and Tools that I use:
   
-<img src="https://media.giphy.com/media/KcPdFfmoj9Yi2X1ZrD/giphy.gif" width="50"><img src="https://media.giphy.com/media/UWt0rhp21JgLwoeFQP/giphy.gif" width="50"><img src="https://img-a.udemycdn.com/course/240x135/958532_478a_4.jpg" width="50"><img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" width="50">
+<img src="https://media.giphy.com/media/KcPdFfmoj9Yi2X1ZrD/giphy.gif" width="50"><img src="https://media.giphy.com/media/UWt0rhp21JgLwoeFQP/giphy.gif" width="50"><img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" width="50">
   
 <div>
 <img align="left" src="https://64.media.tumblr.com/bc91fffa1f7f71014fddf10d3d2decbd/tumblr_pkxty5psM71sguk2k_1280.gifv" width="250">
