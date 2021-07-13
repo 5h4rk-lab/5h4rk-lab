@@ -10,8 +10,8 @@
 
 
 - 🔭 I’m currently working on learnig security concepts 
-- 🌱 I’m currently working for oscp 
-- 💬 Ask me about Linux
+<!-- 🌱 I’m currently working for --> 
+- 💬 Ask me about computer security
 - 📫 How to reach me: 5h4rk07@protonmail.com
 - ⚡ Fun fact: There is a hacker attack every 39 seconds
 
