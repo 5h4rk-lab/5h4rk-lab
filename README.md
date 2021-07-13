@@ -10,10 +10,10 @@
 
 
 - 🔭 I’m currently working on learnig security concepts 
-<!-- 🌱 I’m currently working for --> 
 - 💬 Ask me about computer security
 - 📫 How to reach me: 5h4rk07@protonmail.com
 - ⚡ Fun fact: There is a hacker attack every 39 seconds
+ <!-- 🌱 I’m currently working for --> 
 
 <a href="https://twitter.com/gocharan_">
   <img align="left" alt="gocharan twitter" width="30px" src="https://intaadvising.gatech.edu/wp-content/uploads/2020/11/twitter.png" />
