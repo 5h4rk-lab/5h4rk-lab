@@ -1,5 +1,6 @@
-### Hi there 👋 welcome to my lab 🧪 I cook some cool stuff.
-### This is [Gocharan](https://5h4rk-lab.github.io/) 
+## Hi there <img src="https://github.com/5h4rk-lab/5h4rk-lab/raw/master/hi.gif" width="30px">
+## welcome to my lab 🧪 I cook some cool stuff.
+## This is [Gocharan](https://5h4rk-lab.github.io/) 
 
 <!--
 **5h4rk-lab/5h4rk-lab** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -7,7 +8,7 @@
 - 🤔 I’m looking for help with ...
 - 😄 Pronouns: ...
 -->
-
+---
 - 🧑‍🎓 B-Tech Computer Science @LPU
 - :trophy: CRTP || CEH || EJPT
 - 👨‍💻 Security Researcher 
@@ -16,25 +17,6 @@
 - 🔭 I’m currently working on learning Low level Development. 
 - 💬 Ask me about computer security
 - 😄 Pronouns: He/Him
-- 📫 How to reach me: 5h4rk07@protonmail.com 
- <!-- 🌱 I’m currently working for --> 
-
-<a href="https://twitter.com/gocharan_">
-  <img align="left" alt="gocharan twitter" width="150px" src="https://img.shields.io/badge/Gocharan_-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" />
-</a>
-
-<a href="https://www.linkedin.com/in/kilaru-go-charan-9219501a1">
-  <img align="left" alt="gocharans Linkdein" width="150px" src="https://img.shields.io/badge/Gocharan-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-<a href="https://www.instagram.com/gocharan_/">
-  <img align="left" alt="gocharans Instagram" width="150px" src="https://img.shields.io/badge/gocharan_-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white"/>
-</a>
-<a href="https://gocharan98.medium.com/">
-  <img align="left" alt="gocharans Instagram" width="150px" src="https://img.shields.io/badge/Gocharan-%23000000.svg?style=for-the-badge&logo=Medium&logoColor=white"/>
-</a>
-<br/>
-<br>
-
 
 
 ## I Code Using:
@@ -54,11 +36,26 @@
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![Vim](https://img.shields.io/badge/VIM-%2311AB00.svg?style=for-the-badge&logo=vim&logoColor=white)
 ![Sublime Text](https://img.shields.io/badge/sublime_text-%23575757.svg?style=for-the-badge&logo=sublime-text&logoColor=important)
-  
-<div>
-<img align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=5h4rk-lab&layout=compact" />
-<img align="right" src="https://github-readme-stats.vercel.app/api?username=5h4rk-lab&?count_private=true&show_icons=true&theme=dark&include_all_commits=true" />
-</div>
 
+---
+<img height="137px" src="https://github-readme-stats.vercel.app/api?username=5h4rk-lab&hide_title=true&hide_border=flase&show_icons=true&include_all_commits=true&count_private=true&line_height=21&&theme=tokyonight" /><img height="137px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=5h4rk-lab&hide=php,html&hide_title=true&hide_border=true&layout=compact&langs_count=7&theme=tokyonight" />
 
+## 📫 How to reach me: 
+
+<a href="https://twitter.com/gocharan_">
+  <img align="left" alt="gocharan twitter" width="150px" src="https://img.shields.io/badge/Gocharan_-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" />
+</a>
+ <a href = "mailto: 5h4rk07@protonmail.com">
+  <img align="left" alt="gocharan protonmain" width="150px" src="https://img.shields.io/badge/5h4rk07-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white" />
+</a>
+<a href="https://www.linkedin.com/in/kilaru-go-charan-9219501a1">
+  <img align="left" alt="gocharans Linkdein" width="150px" src="https://img.shields.io/badge/Gocharan-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+<a href="https://www.instagram.com/gocharan_/">
+  <img align="left" alt="gocharans Instagram" width="150px" src="https://img.shields.io/badge/gocharan_-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white"/>
+</a>
+<a href="https://gocharan98.medium.com/">
+  <img align="left" alt="gocharans medium" width="150px" src="https://img.shields.io/badge/Gocharan-%23000000.svg?style=for-the-badge&logo=Medium&logoColor=white"/>
+</a>
+</br>
 
