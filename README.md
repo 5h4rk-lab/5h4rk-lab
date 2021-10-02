@@ -8,37 +8,57 @@
 - 😄 Pronouns: ...
 -->
 
-
-- 🔭 I’m currently working on learnig security concepts 
+- 🧑‍🎓 B-Tech Computer Science @LPU
+- :trophy: CRTP || CEH || EJPT
+- 👨‍💻 Security Researcher 
+- :triangular_flag_on_post: CTF Player
+- :bug: Penetration Tester
+- 🔭 I’m currently working on learning Low level Development. 
 - 💬 Ask me about computer security
-- 📫 How to reach me: 5h4rk07@protonmail.com
-- ⚡ Fun fact: There is a hacker attack every 39 seconds
+- 😄 Pronouns: He/Him
+- 📫 How to reach me: 5h4rk07@protonmail.com 
  <!-- 🌱 I’m currently working for --> 
 
 <a href="https://twitter.com/gocharan_">
-  <img align="left" alt="gocharan twitter" width="30px" src="https://intaadvising.gatech.edu/wp-content/uploads/2020/11/twitter.png" />
+  <img align="left" alt="gocharan twitter" width="150px" src="https://img.shields.io/badge/Gocharan_-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" />
 </a>
 
 <a href="https://www.linkedin.com/in/kilaru-go-charan-9219501a1">
-  <img align="left" alt="gocharans Linkdein" width="21px" src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg" />
+  <img align="left" alt="gocharans Linkdein" width="150px" src="https://img.shields.io/badge/Gocharan-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
-<a href="http://www.hackthebox.eu/badge/image/345137">
-  <img align="left" alt="gocharans HTB" width="25px" src="https://forum.hackthebox.eu/uploads/RJZMUY81IQLQ.png" />
+<a href="https://www.instagram.com/gocharan_/">
+  <img align="left" alt="gocharans Instagram" width="150px" src="https://img.shields.io/badge/gocharan_-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white"/>
+</a>
+<a href="https://gocharan98.medium.com/">
+  <img align="left" alt="gocharans Instagram" width="150px" src="https://img.shields.io/badge/Gocharan-%23000000.svg?style=for-the-badge&logo=Medium&logoColor=white"/>
 </a>
 <br/>
+<br>
 
-![badge](http://www.hackthebox.eu/badge/image/345137)
-## Languages and Tools that I use:
-  
-<img src="https://media.giphy.com/media/KcPdFfmoj9Yi2X1ZrD/giphy.gif" width="50"><img src="https://media.giphy.com/media/UWt0rhp21JgLwoeFQP/giphy.gif" width="50"><img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" width="50">
+
+
+## I Code Using:
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=azure-devops&logoColor=white)
+![Arch](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&logoColor=fff&style=for-the-badge)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Vim](https://img.shields.io/badge/VIM-%2311AB00.svg?style=for-the-badge&logo=vim&logoColor=white)
+![Sublime Text](https://img.shields.io/badge/sublime_text-%23575757.svg?style=for-the-badge&logo=sublime-text&logoColor=important)
   
 <div>
-<img align="left" src="https://64.media.tumblr.com/bc91fffa1f7f71014fddf10d3d2decbd/tumblr_pkxty5psM71sguk2k_1280.gifv" width="250">
+<img align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=5h4rk-lab&layout=compact" />
 <img align="right" src="https://github-readme-stats.vercel.app/api?username=5h4rk-lab&?count_private=true&show_icons=true&theme=dark&include_all_commits=true" />
 </div>
 
 
-<div>
-<img align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=5h4rk-lab&layout=compact" />
-</div>
 
