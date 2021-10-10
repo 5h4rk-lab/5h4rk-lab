@@ -14,7 +14,7 @@
 - 👨‍💻 Security Researcher 
 - :triangular_flag_on_post: CTF Player
 - :bug: Penetration Tester
-- 🔭 I’m currently working on learning Low level Development. 
+- 🔭 I’m currently working on understanding Low level Development. 
 - 💬 Ask me about computer security
 - 😄 Pronouns: He/Him
 
