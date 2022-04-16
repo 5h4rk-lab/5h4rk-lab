@@ -54,7 +54,7 @@
 <a href="https://www.instagram.com/gocharan_/">
   <img align="left" alt="gocharans Instagram" width="150px" src="https://img.shields.io/badge/gocharan_-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white"/>
 </a>
-<a href="https://gocharan98.medium.com/">
+<a href="https://gocharan.medium.com/">
   <img align="left" alt="gocharans medium" width="150px" src="https://img.shields.io/badge/Gocharan-%23000000.svg?style=for-the-badge&logo=Medium&logoColor=white"/>
 </a>
 </br>
