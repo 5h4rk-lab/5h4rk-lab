@@ -48,7 +48,7 @@
  <a href = "mailto: 5h4rk07@protonmail.com">
   <img align="left" alt="gocharan protonmain" width="150px" src="https://img.shields.io/badge/5h4rk07-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white" />
 </a>
-<a href="https://www.linkedin.com/in/go-charan-kilaru-9219501a1/">
+<a href="https://www.linkedin.com/in/Gocharan">
   <img align="left" alt="gocharans Linkdein" width="150px" src="https://img.shields.io/badge/Gocharan-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 <a href="https://www.instagram.com/gocharan_/">
