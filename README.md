@@ -10,7 +10,7 @@
 -->
 ---
 - 🧑‍🎓 B-Tech Computer Science @LPU
-- :trophy: CRTP || CEH || EJPT
+- :trophy: CRTP || CEH || EJPT || Google  Certified Professional Cloud Security Engineer
 - 👨‍💻 Security Researcher 
 - :triangular_flag_on_post: CTF Player
 - :bug: Penetration Tester
