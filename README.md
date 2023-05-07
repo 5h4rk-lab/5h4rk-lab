@@ -58,4 +58,10 @@
   <img align="left" alt="gocharans medium" width="150px" src="https://img.shields.io/badge/Gocharan-%23000000.svg?style=for-the-badge&logo=Medium&logoColor=white"/>
 </a>
 </br>
+<br>
+<br>
+
+## Visitor Count: <br>
+
+![Visitor Count](https://profile-counter.glitch.me/5h4rk-lab/count.svg)
 
