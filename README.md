@@ -45,9 +45,6 @@
 <a href="https://twitter.com/Gocharan_">
   <img align="left" alt="gocharan twitter" width="150px" src="https://img.shields.io/badge/Gocharan_-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" />
 </a>
- <a href = "mailto: sharkmagic07@gmail.com">
-  <img align="left" alt="gocharan protonmain" width="150px" src="https://img.shields.io/badge/5h4rk07-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white" />
-</a>
 <a href="https://www.linkedin.com/in/Gocharan">
   <img align="left" alt="gocharans Linkdein" width="150px" src="https://img.shields.io/badge/Gocharan-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
