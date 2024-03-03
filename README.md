@@ -9,7 +9,7 @@
 - 😄 Pronouns: ...
 -->
 ---
-- 🧑‍🎓 B-Tech Computer Science @LPU
+- 🧑‍🎓 Master of Cybersecurity @University Of Delaware
 - :trophy: CRTP || CEH || EJPT || Google  Certified Professional Cloud Security Engineer
 - 👨‍💻 Security Researcher 
 - :triangular_flag_on_post: CTF Player
