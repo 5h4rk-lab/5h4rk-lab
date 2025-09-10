@@ -9,7 +9,7 @@ on:
     - cron: "0 */12 * * *"
 
 permissions:
-  contents: write
+  contents: write   # needed to push to output branch
 
 jobs:
   build:
@@ -19,11 +19,30 @@ jobs:
 
       - name: Generate runner (snake-style)
         uses: Platane/snk@v3
+        env:                         # 👈 REQUIRED since v3
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           github_user_name: 5h4rk-lab
           outputs: |
             dist/snake.svg
             dist/snake-dark.svg?palette=github-dark
+
+      - name: List files
+        run: |
+          echo "PWD: $PWD"
+          ls -la
+          echo "---- dist ----"
+          ls -la dist || true
+
+      - name: Fail if output missing
+        run: |
+          test -s dist/snake.svg || (echo "No snake.svg generated" && exit 1)
+
+      - name: Upload artifact (debug)
+        uses: actions/upload-artifact@v4
+        with:
+          name: snake-dist
+          path: dist
 
       - name: Publish to output branch
         uses: crazy-max/ghaction-github-pages@v4
