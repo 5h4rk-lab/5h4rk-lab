@@ -1,3 +1,4 @@
+# .github/workflows/mario-runner.yml
 name: Mario Runner
 
 on:
@@ -30,166 +31,111 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USER: 5h4rk-lab
+        shell: bash
         run: |
-          mkdir -p scripts dist
-          cat > scripts/mario_runner.py <<'PY'
-import os, sys, json, datetime, math, requests
-from PIL import Image, ImageDraw
+          python - <<'PY'
+          import os, sys, json, math, requests
+          from PIL import Image, ImageDraw
 
-# ------- Config -------
-USERNAME = os.getenv("GITHUB_USER", "").strip()
-TOKEN = os.getenv("GITHUB_TOKEN", "")
-DAYS = 365  # one year
-CELL = 12   # pixel size per contribution cell
-GAP = 2     # gap between cells
-PADDING = 8
-FPS = 18
-STEP_PER_FRAME = 1  # how many cells runner advances per frame
-# ----------------------
+          USERNAME = os.getenv("GITHUB_USER","").strip()
+          TOKEN = os.getenv("GITHUB_TOKEN","").strip()
+          DAYS = 365
+          CELL, GAP, PADDING = 12, 2, 8
+          FPS = 18
+          STEP_PER_FRAME = 1
 
-if not USERNAME or not TOKEN:
-    print("Missing GITHUB_USER or GITHUB_TOKEN")
-    sys.exit(1)
+          if not USERNAME or not TOKEN:
+              print("Missing GITHUB_USER or GITHUB_TOKEN", file=sys.stderr); sys.exit(1)
 
-# Fetch contribution calendar via GraphQL
-q = '''
-query($login:String!) {
-  user(login:$login) {
-    contributionsCollection {
-      contributionCalendar {
-        totalContributions
-        weeks {
-          contributionDays { date contributionLevel }
-        }
-      }
-    }
-  }
-}
-'''
-r = requests.post(
-    "https://api.github.com/graphql",
-    headers={"Authorization": f"Bearer {TOKEN}"},
-    json={"query": q, "variables": {"login": USERNAME}},
-    timeout=30,
-)
-r.raise_for_status()
-data = r.json()
-weeks = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
+          q = '''
+          query($login:String!) {
+            user(login:$login) {
+              contributionsCollection {
+                contributionCalendar {
+                  weeks { contributionDays { date contributionLevel } }
+                }
+              }
+            }
+          }'''
+          r = requests.post(
+              "https://api.github.com/graphql",
+              headers={"Authorization": f"Bearer {TOKEN}"},
+              json={"query": q, "variables": {"login": USERNAME}},
+              timeout=30,
+          ); r.raise_for_status()
+          weeks = r.json()["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
 
-# Flatten to last 365 days in order (oldest -> newest) as a 7-row grid (Sun..Sat per column)
-days = []
-for w in weeks:
-    for d in w["contributionDays"]:
-        days.append(d)
-# keep only last DAYS
-days = days[-DAYS:]
+          days = [d for w in weeks for d in w["contributionDays"]][-DAYS:]
+          cols = max(1, math.ceil(len(days)/7)); rows = 7
 
-# Build grid (columns = ceil(DAYS/7))
-cols = math.ceil(len(days)/7)
-rows = 7
+          palette = {
+              "NONE": (235,237,240),
+              "FIRST_QUARTILE": (198,228,139),
+              "SECOND_QUARTILE": (123,201,111),
+              "THIRD_QUARTILE": (35,154,59),
+              "FOURTH_QUARTILE": (25,97,39),
+          }
 
-# Map contributionLevel to color shades (GitHub-ish but generic)
-palette = {
-    "NONE":    (235, 237, 240),
-    "FIRST_QUARTILE":  (198, 228, 139),
-    "SECOND_QUARTILE": (123, 201, 111),
-    "THIRD_QUARTILE":  (35, 154, 59),
-    "FOURTH_QUARTILE": (25, 97, 39),
-}
-# Build a grid matrix [row][col]
-grid = [[{"level":"NONE"} for _ in range(cols)] for __ in range(rows)]
-for i, d in enumerate(days):
-    col = i // rows
-    row = i % rows
-    grid[row][col] = {"level": d["contributionLevel"]}
+          W = PADDING*2 + cols*CELL + (cols-1)*GAP
+          H = PADDING*2 + rows*CELL + (rows-1)*GAP
 
-# Canvas size
-W = PADDING*2 + cols*CELL + (cols-1)*GAP
-H = PADDING*2 + rows*CELL + (rows-1)*GAP
+          grid = [[{"level":"NONE"} for _ in range(cols)] for __ in range(rows)]
+          for i, d in enumerate(days):
+              c, r0 = i // rows, i % rows
+              grid[r0][c]["level"] = d["contributionLevel"]
 
-# Simple two-frame “runner” sprite (8x8) defined as arrays of (x,y) pixels.
-# This is an original, non-infringing pixel character.
-runner_frames = [
-    {(1,1),(2,1),(3,1),(2,2), (1,3),(2,3),(3,3), (2,4), (0,5),(1,5),(2,5), (3,6)},  # pose A
-    {(1,1),(2,1),(3,1),(2,2), (1,3),(2,3),(3,3), (2,4), (1,6),(2,6),(3,6), (0,5)},  # pose B
-]
-runner_color = (220, 60, 60)   # hat/shirt
-boots_color  = (60, 60, 60)
+          def draw_cell(draw, row, col, fill):
+              x = PADDING + col*(CELL+GAP)
+              y = PADDING + row*(CELL+GAP)
+              draw.rectangle([x, y, x+CELL-1, y+CELL-1], fill=fill)
 
-def draw_cell(draw, row, col, fill):
-    x = PADDING + col*(CELL+GAP)
-    y = PADDING + row*(CELL+GAP)
-    draw.rectangle([x, y, x+CELL-1, y+CELL-1], fill=fill)
+          bg = Image.new("RGBA", (W,H), (255,255,255,0))
+          bgd = ImageDraw.Draw(bg)
+          for rr in range(rows):
+              for cc in range(cols):
+                  draw_cell(bgd, rr, cc, palette.get(grid[rr][cc]["level"], palette["NONE"]))
 
-def draw_runner(img, px, py, frame_idx):
-    # draw a little shadow
-    shadow = Image.new("RGBA", img.size, (0,0,0,0))
-    sd = ImageDraw.Draw(shadow)
-    sd.ellipse([px-2, py+8, px+10, py+12], fill=(0,0,0,70))
-    img.alpha_composite(shadow)
+          runner_frames = [
+              {(1,1),(2,1),(3,1),(2,2),(1,3),(2,3),(3,3),(2,4),(0,5),(1,5),(2,5),(3,6)},
+              {(1,1),(2,1),(3,1),(2,2),(1,3),(2,3),(3,3),(2,4),(1,6),(2,6),(3,6),(0,5)},
+          ]
+          runner_color, boots_color = (220,60,60), (60,60,60)
 
-    # draw body pixels
-    dr = ImageDraw.Draw(img)
-    pose = runner_frames[frame_idx % len(runner_frames)]
-    for (dx, dy) in pose:
-        dr.rectangle([px+dx, py+dy, px+dx, py+dy], fill=runner_color)
-    # boots
-    dr.rectangle([px+2, py+7, px+3, py+7], fill=boots_color)
+          def draw_runner(img, px, py, frame_idx):
+              shadow = Image.new("RGBA", img.size, (0,0,0,0))
+              sd = ImageDraw.Draw(shadow)
+              sd.ellipse([px-2, py+8, px+10, py+12], fill=(0,0,0,70))
+              img.alpha_composite(shadow)
+              dr = ImageDraw.Draw(img)
+              pose = runner_frames[frame_idx % len(runner_frames)]
+              for (dx,dy) in pose:
+                  dr.rectangle([px+dx, py+dy, px+dx, py+dy], fill=runner_color)
+              dr.rectangle([px+2, py+7, px+3, py+7], fill=boots_color)
 
-# Pre-render background grid
-bg = Image.new("RGBA", (W, H), (255,255,255,0))
-bgd = ImageDraw.Draw(bg)
-for r_idx in range(rows):
-    for c_idx in range(cols):
-        level = grid[r_idx][c_idx]["level"]
-        draw_cell(bgd, r_idx, c_idx, palette.get(level, palette["NONE"]))
+          path = []
+          for c in range(cols):
+              rng = range(rows) if c % 2 == 0 else range(rows-1,-1,-1)
+              for r0 in rng: path.append((r0,c))
+          path = path[-len(days):]
 
-# Compute a simple left-to-right, snake-like path over existing columns
-path = []
-for c in range(cols):
-    if c % 2 == 0:
-        r_range = range(rows)          # top->bottom
-    else:
-        r_range = range(rows-1, -1, -1) # bottom->top
-    for r in r_range:
-        path.append( (r, c) )
-# truncate path to the number of days we actually have (optional)
-path = path[-len(days):]
+          def cell_center(row, col):
+              x = PADDING + col*(CELL+GAP) + CELL//2 - 4
+              y = PADDING + row*(CELL+GAP) + CELL//2 - 6
+              return x, y
 
-# Convert grid coords to pixel coords for runner center
-def cell_center(row, col):
-    x = PADDING + col*(CELL+GAP) + CELL//2 - 4  # -4 to center 8px sprite
-    y = PADDING + row*(CELL+GAP) + CELL//2 - 6
-    return x, y
+          frames = []
+          steps = max(2, len(path))
+          for i in range(0, steps, STEP_PER_FRAME):
+              frame = bg.copy()
+              x, y = cell_center(*path[i])
+              draw_runner(frame, x, y, i)
+              frames.append(frame)
 
-# Build frames
-frames = []
-steps = len(path)
-if steps < 2:
-    steps = 2
-for i in range(0, steps, STEP_PER_FRAME):
-    frame = bg.copy()
-    x, y = cell_center(*path[i])
-    draw_runner(frame, x, y, i)  # alternate pose via i
-    frames.append(frame)
-
-# Save animated GIF
-os.makedirs("dist", exist_ok=True)
-out = "dist/mario.gif"
-frames[0].save(
-    out, save_all=True, append_images=frames[1:], optimize=False,
-    duration=int(1000/FPS), loop=0, transparency=0
-)
-print(f"Wrote {out} ({len(frames)} frames, {W}x{H})")
-PY
-
-          python scripts/mario_runner.py
-
-      - name: List files
-        run: |
-          ls -la
-          echo "---- dist ----"
-          ls -la dist || true
+          os.makedirs("dist", exist_ok=True)
+          out = "dist/mario.gif"
+          frames[0].save(out, save_all=True, append_images=frames[1:], duration=int(1000/FPS), loop=0, optimize=False)
+          print(f"Wrote {out} ({len(frames)} frames, {W}x{H})")
+          PY
 
       - name: Upload artifact (debug)
         uses: actions/upload-artifact@v4
