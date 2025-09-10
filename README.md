@@ -97,9 +97,8 @@
 
 <!-- =======================  FOOTER  ======================= -->
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/5h4rk-lab/5h4rk-lab/output/mario.svg" alt="Mario runner animation"/>
-</p>
+![mario-runner](https://raw.githubusercontent.com/5h4rk-lab/5h4rk-lab/output/snake.svg)
+
 
 <p align="center">
   <img
