@@ -96,6 +96,11 @@
 - LinkedIn: **/in/Gocharan**
 
 <!-- =======================  FOOTER  ======================= -->
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/5h4rk-lab/5h4rk-lab/output/mario.svg" alt="Mario runner animation"/>
+</p>
+
 <p align="center">
   <img
     alt=""
