@@ -1,0 +1,133 @@
+name: Mario Runner
+on:
+  schedule: [{ cron: "0 2 * * *" }]  # daily refresh
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (shallow)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Generate mario.svg
+        run: |
+          mkdir -p dist
+          cat > dist/mario.svg << 'SVG'
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="980" height="180" viewBox="0 0 980 180" xmlns="http://www.w3.org/2000/svg">
+  <!-- Night sky -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#0e1b2e"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#1e90ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#sky)"/>
+
+  <!-- Soft stars -->
+  <g opacity="0.6">
+    <circle cx="80" cy="24" r="1.5" fill="#c7d2fe"/>
+    <circle cx="220" cy="38" r="1.3" fill="#c7d2fe"/>
+    <circle cx="430" cy="20" r="1.5" fill="#c7d2fe"/>
+    <circle cx="640" cy="34" r="1.2" fill="#c7d2fe"/>
+    <circle cx="820" cy="18" r="1.6" fill="#c7d2fe"/>
+  </g>
+
+  <!-- Scrolling clouds -->
+  <g opacity="0.85">
+    <g id="cloud">
+      <ellipse cx="0" cy="0" rx="28" ry="12" fill="#dbeafe"/>
+      <ellipse cx="18" cy="-6" rx="22" ry="10" fill="#e0f2fe"/>
+      <ellipse cx="-22" cy="-3" rx="18" ry="9"  fill="#e0f2fe"/>
+    </g>
+    <g transform="translate(200,50)">
+      <use href="#cloud"/>
+    </g>
+    <g transform="translate(520,30)">
+      <use href="#cloud"/>
+    </g>
+    <g transform="translate(820,55)">
+      <use href="#cloud"/>
+    </g>
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="-520 0" dur="18s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Ground -->
+  <rect y="140" width="100%" height="40" fill="url(#ground)"/>
+  <g opacity="0.25">
+    <rect x="0" y="140" width="980" height="2" fill="#93c5fd"/>
+    <rect x="0" y="158" width="980" height="2" fill="#93c5fd"/>
+    <rect x="0" y="176" width="980" height="2" fill="#93c5fd"/>
+  </g>
+
+  <!-- Pipe -->
+  <g id="pipe" transform="translate(600,110)">
+    <rect x="0" y="0" width="36" height="36" fill="#16a34a" stroke="#065f46" stroke-width="2"/>
+    <rect x="-8" y="-10" width="52" height="12" fill="#22c55e" stroke="#065f46" stroke-width="2"/>
+  </g>
+
+  <!-- Question blocks -->
+  <g transform="translate(360,70)">
+    <rect width="24" height="24" rx="3" fill="#f59e0b" stroke="#b45309" stroke-width="2"/>
+    <circle cx="12" cy="12" r="3" fill="#fde68a"/>
+  </g>
+  <g transform="translate(750,80)">
+    <rect width="24" height="24" rx="3" fill="#f59e0b" stroke="#b45309" stroke-width="2"/>
+    <circle cx="12" cy="12" r="3" fill="#fde68a"/>
+  </g>
+
+  <!-- Mario-like pixel hero -->
+  <g id="hero" transform="translate(40,120) scale(1)">
+    <!-- legs -->
+    <rect x="-6" y="8"  width="6" height="8" fill="#1e40af"/>
+    <rect x="0"  y="8"  width="6" height="8" fill="#1e3a8a">
+      <animate attributeName="y" values="8;9;8;7;8" dur="0.4s" repeatCount="indefinite"/>
+    </rect>
+    <!-- body -->
+    <rect x="-8" y="-2" width="20" height="12" fill="#1d4ed8"/>
+    <rect x="-8" y="-2" width="10" height="12" fill="#1e3a8a" opacity="0.8"/>
+    <!-- arms -->
+    <rect x="-12" y="0" width="6" height="6" fill="#ef4444">
+      <animate attributeName="y" values="0;-1;0;1;0" dur="0.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="12" y="0" width="6" height="6" fill="#ef4444">
+      <animate attributeName="y" values="0;1;0;-1;0" dur="0.4s" repeatCount="indefinite"/>
+    </rect>
+    <!-- head + cap -->
+    <rect x="2"  y="-10" width="10" height="10" fill="#f59e0b"/>
+    <rect x="0"  y="-12" width="14" height="4"  fill="#dc2626"/>
+  </g>
+
+  <!-- Motion path with jump over the pipe -->
+  <path id="track" d="M 40 120 C 220 120 300 120 360 120 S 430 100 500 120
+                       S 580 120 600 120 C 610 120 625 90 640 120
+                       S 740 120 860 120 S 940 120 980 120" fill="none" stroke="none"/>
+  <use href="#hero">
+    <animateMotion dur="9s" repeatCount="indefinite">
+      <mpath href="#track"/>
+    </animateMotion>
+  </use>
+
+  <!-- HUD -->
+  <text x="18" y="26" fill="#93c5fd" font-family="JetBrains Mono, Consolas, monospace" font-size="15">~/profile$  mario --run</text>
+</svg>
+SVG
+
+      - name: Publish to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
