@@ -97,7 +97,8 @@
 
 <!-- =======================  FOOTER  ======================= -->
 
-![mario-runner](https://raw.githubusercontent.com/5h4rk-lab/5h4rk-lab/output/snake.svg)
+![mario-runner](https://raw.githubusercontent.com/5h4rk-lab/5h4rk-lab/output/mario.gif)
+
 
 
 <p align="center">
