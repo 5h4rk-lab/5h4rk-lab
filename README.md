@@ -1,7 +1,10 @@
 <!-- HEADER BANNER -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0:0ea5e9,100:111827&text=Go%20Charan%20Kilaru%20%7C%20Security%20Engineer&fontAlign=50&fontAlignY=35&fontColor=ffffff&animation=fadeIn" alt="banner"/>
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&duration=2800&pause=600&color=0EA5E9&center=true&vCenter=true&width=900&lines=$+whoami%3A+Security+Engineer;AppSec+%7C+Cloud+Security+%7C+DevSecOps;Initializing...+Access+Granted+🔓" alt="typing headline"/>
+  </a>
 </p>
+
 
 <!-- ANIMATED TERMINAL INTRO -->
 <p align="center">
@@ -18,8 +21,9 @@
 
 <!-- VISITOR COUNTER -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=5h4rk-lab&label=Profile%20Views&color=0ea5e9&style=flat-square" alt="profile views"/>
+  <img src="https://komarev.com/ghpvc/?username=5h4rk-lab&label=Visitors&color=0ea5e9&style=for-the-badge" alt="profile views"/>
 </p>
+
 
 ---
 
