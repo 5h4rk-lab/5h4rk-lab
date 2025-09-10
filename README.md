@@ -1,63 +1,62 @@
-## Hi there <img src="https://github.com/5h4rk-lab/5h4rk-lab/raw/master/hi.gif" width="30px">
-## welcome to my lab 🧪 I cook some cool stuff.
-## This is [Gocharan](https://5h4rk-lab.github.io/) 
+<h1 align="center">🛡️ Go Charan Kilaru</h1>
+<h3 align="center">Application & Cloud Security Engineer | Penetration Tester | Researcher</h3>
 
-<!--
-**5h4rk-lab/5h4rk-lab** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 😄 Pronouns: ...
--->
----
-- 🧑‍🎓 Master of Cybersecurity @University Of Delaware
-- :trophy: CRTP || CEH || EJPT || Google  Certified Professional Cloud Security Engineer
-- 👨‍💻 Security Researcher 
-- :triangular_flag_on_post: CTF Player
-- :bug: Penetration Tester
-- 🔭 I’m currently working on understanding Low level Development. 
-- 💬 Ask me about computer security
-- 😄 Pronouns: He/Him
-
-
-## I Code Using:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
-![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
-![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=azure-devops&logoColor=white)
-![Arch](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&logoColor=fff&style=for-the-badge)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![Vim](https://img.shields.io/badge/VIM-%2311AB00.svg?style=for-the-badge&logo=vim&logoColor=white)
-![Sublime Text](https://img.shields.io/badge/sublime_text-%23575757.svg?style=for-the-badge&logo=sublime-text&logoColor=important)
+<p align="center">
+  <a href="https://5h4rk.me"><img src="https://img.shields.io/badge/🌐%20Portfolio-5h4rk.me-blue?style=for-the-badge"/></a>
+  <a href="https://www.linkedin.com/in/Gocharan"><img src="https://img.shields.io/badge/LinkedIn-Gocharan-%230077B5?style=for-the-badge&logo=linkedin"/></a>
+  <a href="https://twitter.com/Gocharan_"><img src="https://img.shields.io/badge/Twitter-@Gocharan__-%231DA1F2?style=for-the-badge&logo=twitter"/></a>
+  <a href="mailto:kilaru.gocharan@gmail.com"><img src="https://img.shields.io/badge/Email-kilaru.gocharan%40gmail.com-red?style=for-the-badge&logo=gmail"/></a>
+</p>
 
 ---
 
-## 📫 How to reach me: 
+## 👨‍🎓 About Me
+- 🎓 **Master’s in Cybersecurity** @ University of Delaware (GPA: 3.96)  
+- 🔐 **Application & Cloud Security** (AWS | GCP | DevSecOps | AppSec)  
+- 🕵️ **Penetration Tester** – Discovered 80+ critical vulnerabilities (Keeper Security, Oppo, Airtel…)  
+- ⚡ **Research** – Thesis on **secure EV charging protocols (LIN-CP)** with cryptographic enhancements  
+- 🎮 **CTF Player** – Built challenges for UDCTF, Red Team Village, Vulncon  
 
-<a href="https://twitter.com/Gocharan_">
-  <img align="left" alt="gocharan twitter" width="150px" src="https://img.shields.io/badge/Gocharan_-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" />
-</a>
-<a href="https://www.linkedin.com/in/Gocharan">
-  <img align="left" alt="gocharans Linkdein" width="150px" src="https://img.shields.io/badge/Gocharan-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-<a href="https://www.instagram.com/gocharan_/">
-  <img align="left" alt="gocharans Instagram" width="150px" src="https://img.shields.io/badge/gocharan_-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white"/>
-</a>
-<a href="https://gocharan.medium.com/">
-  <img align="left" alt="gocharans medium" width="150px" src="https://img.shields.io/badge/Gocharan-%23000000.svg?style=for-the-badge&logo=Medium&logoColor=white"/>
-</a>
-</br>
-<br>
-<br>
+---
 
-## Visitor Count: <br>
+## 🏆 Certifications
+<p align="center">
+  <img src="https://img.shields.io/badge/Certified%20Ethical%20Hacker-CEH-red?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Google%20Cloud%20Professional-Cloud%20Security%20Engineer-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Certified%20Red%20Team%20Professional-CRTP-purple?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/eJPT-Junior%20Penetration%20Tester-green?style=for-the-badge"/>
+</p>
 
-![Visitor Count](https://profile-counter.glitch.me/5h4rk-lab/count.svg)
+---
 
+## ⚙️ Tech & Tools
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,cpp,c,js,nodejs,bash,powershell,docker,aws,gcp,azure,mysql,mongodb,linux,vscode,git" />
+</p>
+
+---
+
+## 🚀 Featured Projects
+- 🔒 **[CodeJedi](https://github.com/5h4rk-lab/CodeJedi)** – ML-powered static analysis for C/C++ (memory safety + crypto misuse)  
+- 🛠️ **Automated CVE PoCs** – Python exploit PoCs for high-impact CVEs (red team validation)  
+- 🎯 **CTF Challenge Development** – Binary/Web/Crypto challenges hosted on AWS (featured @ Red Team Village, Vulncon)  
+
+---
+
+## 📊 GitHub Stats
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=5h4rk-lab&show_icons=true&theme=radical" height="160"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=5h4rk-lab&layout=compact&theme=radical" height="160"/>
+</p>
+
+---
+
+## 🕵️ Security Motto
+> “Build it secure. Break it better. Fix it faster.”  
+
+---
+
+<p align="center"> 
+  🔥 Visitor Count <br>
+  <img src="https://profile-counter.glitch.me/5h4rk-lab/count.svg" />
+</p>
