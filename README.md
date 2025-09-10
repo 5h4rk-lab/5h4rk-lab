@@ -1,9 +1,8 @@
 <!-- HEADER BANNER -->
 <p align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&duration=2800&pause=600&color=0EA5E9&center=true&vCenter=true&width=900&lines=$+whoami%3A+Security+Engineer;AppSec+%7C+Cloud+Security+%7C+DevSecOps;Initializing...+Access+Granted+🔓" alt="typing headline"/>
-  </a>
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&duration=2800&pause=600&color=0EA5E9&center=true&vCenter=true&width=900&lines=$+whoami%3A+Security+Engineer;AppSec+%7C+Cloud+Security+%7C+DevSecOps;Initializing...+Access+Granted+🔓" alt="typing headline"/>
 </p>
+
 
 
 <!-- ANIMATED TERMINAL INTRO -->
@@ -21,8 +20,9 @@
 
 <!-- VISITOR COUNTER -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=5h4rk-lab&label=Visitors&color=0ea5e9&style=for-the-badge" alt="profile views"/>
+  <img src="https://komarev.com/ghpvc/?username=5h4rk-lab&label=VISITORS&color=0ea5e9&style=for-the-badge" alt="visitors"/>
 </p>
+
 
 
 ---
