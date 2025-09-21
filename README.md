@@ -99,6 +99,8 @@
 
 ![mario-runner](https://raw.githubusercontent.com/5h4rk-lab/5h4rk-lab/output/mario.gif)
 
+[![An image of @5h4rklab's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/5h4rklab)](https://holopin.io/@5h4rklab)
+
 
 
 <p align="center">
